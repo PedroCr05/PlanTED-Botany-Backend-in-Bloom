@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://PedroCr05:2hjmI1jKWsKbdvGq@clusters.k4z0f.mongodb.net/plantDataBase?retryWrites=true&w=majority&appName=clusters"
+    "mongodb+srv://PedroCr05:---------------@clusters.k4z0f.mongodb.net/plantDataBase?retryWrites=true&w=majority&appName=clusters"
   )
   .then(() => {
     console.log(
@@ -23,7 +23,7 @@ mongoose
       e.message
     );
   });
-
+mongoose.set(`debug`, true);
 const db = mongoose.connection;
 
 module.exports = db;

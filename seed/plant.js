@@ -69,7 +69,7 @@ const main = async () => {
         "https://upload.wikimedia.org/wikipedia/commons/f/ff/Aconitum_variegatum_110807f.jpg",
     },
   ];
-
+  await Plant.deleteMany();
   await Plant.insertMany(plants);
   console.log(`
     ==============================
